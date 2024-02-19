@@ -1,0 +1,41 @@
+{
+  "name": "js-template-tag",
+  "displayName": "js-template-tag",
+  "description": "Syntax highlighting for JavaScript inside of JavaScript tagged template strings",
+  "version": "1.0.6",
+  "publisher": "airhorns",
+  "repository": {
+    "url": "https://github.com/gadget-inc/vscode-js-template-tag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gadget-inc/vscode-js-template-tag/issues"
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "javascript",
+    "template"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx"
+        ],
+        "scopeName": "inline.js-template-tag",
+        "path": "./syntaxes/js-template-tag.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.typescript": "typescript"
+        }
+      }
+    ]
+  }
+}
